@@ -1,9 +1,9 @@
 @keyframes rotate {
   0% {
-    transform: translateZ(-56vw) rotateY(360deg);
+    transform: translateZ(-56rem) rotateY(360deg);
   }
   100% {
-    transform: translateZ(-56vw) rotateY(0deg);
+    transform: translateZ(-56rem) rotateY(0deg);
   }
 }
 
@@ -12,15 +12,20 @@
   font-family: sans-serif;
 }
 
+html {
+  /** костыль для Edge **/
+  font-size: 1vw;
+}
+
 body {
   padding: 0;
   margin: 0;
 }
 
 .scene {
-  width: 30vw;
-  height: 20vw;
-  perspective: 100vw;
+  width: 30rem;
+  height: 20rem;
+  perspective: 100rem;
   perspective-origin: center center;
   margin: 30vh auto 0;
 }
@@ -34,25 +39,25 @@ body {
 }
 
 .card {
-  width: 28vw;
-  height: 18vw;
+  width: 28rem;
+  height: 18rem;
   position: absolute;
-  top: 1vw;
-  left: 1vw;
-  border-radius: 2vw;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 10vw;
+  font-size: 10rem;
   color: #ddd;
-  border: solid .5vw;
+  border: solid .5rem;
   transform-style: preserve-3d;
 }
 
 .card:after {
   content: "Back";
   opacity: .6;
-  font-size: 5vw;
+  font-size: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,60 +73,60 @@ body {
 
 .card:nth-child(1) {
   background-color: #a90001;
-  transform: rotateY(0deg) translateZ(56vw);
+  transform: rotateY(0deg) translateZ(56rem);
 }
 
 .card:nth-child(2) {
   background-color: #a95300;
-  transform: rotateY(30deg) translateZ(56vw);
+  transform: rotateY(30deg) translateZ(56rem);
 }
 
 .card:nth-child(3) {
   background-color: #a9a400;
-  transform: rotateY(60deg) translateZ(56vw);
+  transform: rotateY(60deg) translateZ(56rem);
 }
 
 .card:nth-child(4) {
   background-color: #49a900;
-  transform: rotateY(90deg) translateZ(56vw);
+  transform: rotateY(90deg) translateZ(56rem);
 }
 
 .card:nth-child(5) {
   background-color: #04a900;
-  transform: rotateY(120deg) translateZ(56vw);
+  transform: rotateY(120deg) translateZ(56rem);
 }
 
 .card:nth-child(6) {
   background-color: #00a940;
-  transform: rotateY(150deg) translateZ(56vw);
+  transform: rotateY(150deg) translateZ(56rem);
 }
 
 .card:nth-child(7) {
   background-color: #00a9a9;
-  transform: rotateY(180deg) translateZ(56vw);
+  transform: rotateY(180deg) translateZ(56rem);
 }
 
 .card:nth-child(8) {
   background-color: #005fa9;
-  transform: rotateY(210deg) translateZ(56vw);
+  transform: rotateY(210deg) translateZ(56rem);
 }
 
 .card:nth-child(9) {
   background-color: #0000a9;
-  transform: rotateY(240deg) translateZ(56vw);
+  transform: rotateY(240deg) translateZ(56rem);
 }
 
 .card:nth-child(10) {
   background-color: #5500a9;
-  transform: rotateY(270deg) translateZ(56vw);
+  transform: rotateY(270deg) translateZ(56rem);
 }
 
 .card:nth-child(11) {
   background-color: #a800a9;
-  transform: rotateY(300deg) translateZ(56vw);
+  transform: rotateY(300deg) translateZ(56rem);
 }
 
 .card:nth-child(12) {
   background-color: #a9005c;
-  transform: rotateY(330deg) translateZ(56vw);
+  transform: rotateY(330deg) translateZ(56rem);
 }
